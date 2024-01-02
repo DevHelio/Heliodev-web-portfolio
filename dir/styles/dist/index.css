@@ -156,16 +156,26 @@ skills h4 {
 }
 skills ul {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 skills ul li {
   list-style: none;
   margin: 0 10px 0 10px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 skills ul li img {
   width: 60px;
   height: 60px;
+}
+skills ul li img:hover {
+  width: 75px;
+  height: 75px;
 }
 
 Projects {
@@ -231,18 +241,18 @@ Projects projectCard right rightContent technologies li {
   margin: 0 10px 0 10px;
   list-style: none;
 }
-Projects projectCard right rightContent technologies li img {
+Projects projectCard right rightContent technologies img {
   width: 40px;
   height: 40px;
   list-style: none;
 }
-Projects projectCard right rightContent p {
+Projects projectCard p {
   margin-bottom: 30px;
 }
-Projects projectCard right rightContent buttons {
+Projects projectCard buttons {
   display: flex;
   flex-direction: row;
 }
-Projects projectCard right rightContent buttons button {
+Projects projectCard buttons button {
   width: 80%;
 }

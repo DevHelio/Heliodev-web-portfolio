@@ -177,14 +177,24 @@ skills {
   }
   ul {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     li {
       list-style: none;
       margin: 0 10px 0 10px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
         width: 60px;
         height: 60px;
+        &:hover {
+          width: 75px;
+          height: 75px;
+        }
       }
     }
   }
@@ -263,23 +273,23 @@ Projects {
         li {
           margin: 0 10px 0 10px;
           list-style: none;
-          img {
-            width: 40px;
-            height: 40px;
-            list-style: none;
-          }
+        }
+        img {
+          width: 40px;
+          height: 40px;
+          list-style: none;
         }
       }
+    }
 
-      p {
-        margin-bottom: 30px;
-      }
-      buttons {
-        display: flex;
-        flex-direction: row;
-        button {
-          width: 80%;
-        }
+    p {
+      margin-bottom: 30px;
+    }
+    buttons {
+      display: flex;
+      flex-direction: row;
+      button {
+        width: 80%;
       }
     }
   }
