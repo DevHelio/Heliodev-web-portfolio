@@ -20,7 +20,8 @@ header {
   top: 0;
   z-index: 100;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-shadow: 0 0px 9px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: fit-content;
 }
@@ -42,10 +43,11 @@ header contents div {
   justify-content: flex-end;
   padding-right: 10%;
 }
-header contents div button {
+header contents div #DropDownButton {
   border: none;
 }
-header contents div div {
+header contents div #DropDownMenuList {
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -56,19 +58,16 @@ header contents div div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.97);
 }
-header contents div div p {
+header contents div #DropDownMenuList p {
   text-align: center;
   margin: 2%;
   font-size: xx-large;
   cursor: pointer;
 }
-header contents div div p:active, header contents div div p:hover, header contents div div p:current {
-  text-decoration: dashed;
-  background-color: antiquewhite;
-}
 header contents img {
+  background-color: white;
   display: block;
   width: 25px;
   height: 25px;

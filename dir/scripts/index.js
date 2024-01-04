@@ -1,5 +1,4 @@
-//Making the dropdown menu in mobile mode funcional
-
+//Making the dropdown menu in mobile mode functional
 document
   .getElementById("DropDownButton")
   .addEventListener("click", function () {
@@ -15,3 +14,11 @@ document
       });
     }
   });
+
+//tapping on white part (div) "DropDownMenuList" to make the menu dissapear
+document.getElementById("DropDownMenuList").addEventListener("click", () => {
+  console.log("DropDown");
+  document.getElementById("DropDownMenuList").style.display = "none";
+});
+
+////////////////////////////////////////
