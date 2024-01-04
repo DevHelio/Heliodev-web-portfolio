@@ -1,11 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const mobileDropdown = document.querySelector(".mobile-dropdown");
+//Making the dropdown menu in mobile mode funcional
 
-  document.querySelector(".logo").addEventListener("click", function () {
-    mobileDropdown.style.display =
-      mobileDropdown.style.display === "none" ||
-      mobileDropdown.style.display === ""
-        ? "block"
-        : "none";
-  });
-});
+document
+  .getElementById("DropDownButton")
+  .addEventListener("onclick", function () {});

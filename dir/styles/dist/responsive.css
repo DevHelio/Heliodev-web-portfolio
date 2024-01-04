@@ -11,7 +11,8 @@ img {
 }
 
 body {
-  background-color: rgba(212, 36, 36, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -41,21 +42,34 @@ header contents div {
   justify-content: flex-end;
   padding-right: 10%;
 }
-header contents div p {
-  display: none;
-  margin: 0 5% 0 5%;
+header contents div button {
+  border: none;
 }
-header contents div img {
+header contents div div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+header contents div div p {
+  text-align: center;
+  margin: 2%;
+  font-size: xx-large;
+  cursor: pointer;
+}
+header contents div div p:active, header contents div div p:hover, header contents div div p:current {
+  text-decoration: dashed;
+  background-color: antiquewhite;
+}
+header contents img {
   display: block;
   width: 25px;
   height: 25px;
-}
-header contents div:active {
-  background-color: antiquewhite;
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    display: none;
-  }
 }
