@@ -1,3 +1,15 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -94,6 +106,7 @@ pageContect {
 }
 
 hero {
+  flex: 1;
   width: 100svw;
   height: 100svh;
 
@@ -103,7 +116,6 @@ hero {
   justify-content: center;
   align-items: center;
 
-  background-color: rgba($color: #000000, $alpha: 0.2);
   heroContent {
     width: 80%;
     height: 80%;
@@ -131,11 +143,96 @@ hero {
       flex-direction: column;
       align-items: center;
     }
+    .more {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  arrows {
+    animation: bounce 1s ease-in-out infinite;
+    div {
+      display: flex;
+      flex-direction: column;
+      img {
+        margin-top: -10px;
+      }
+    }
+  }
+}
+
+AboutMe {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  left {
+    .first {
+      font-size: 40px;
+    }
+    h2 {
+      margin-bottom: 5%;
+    }
+    p {
+      font-size: 1.4em;
+    }
+  }
+  right {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 80svw;
+      height: 80svw;
+      aspect-ratio: 1/1;
+
+      border-radius: 20px;
+      box-shadow: 0 0px 9px rgba(0, 0, 0, 0.2);
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+skills {
+  display: flex;
+  flex-direction: column;
+
+  margin: 5% 5% 5% 5%;
+  h4 {
+    margin-bottom: 7.5%;
+    font-size: 2em;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      margin: 2% 2% 2% 2%;
+      list-style-type: none;
+
+      img {
+        width: 3em;
+        height: 3em;
+      }
+    }
   }
 }
 
 // Desktop media query
 @media only screen and (min-width: 768px) {
   body {
+    //
+    background-color: rgba($color: #973e3e, $alpha: 0.2);
   }
 }
