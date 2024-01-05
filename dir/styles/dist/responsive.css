@@ -157,6 +157,10 @@ AboutMe left h2 {
 AboutMe left p {
   font-size: 1.4em;
 }
+AboutMe left .ps {
+  font-weight: 100;
+  font-size: 1em;
+}
 AboutMe right {
   margin-top: 10%;
   display: flex;
