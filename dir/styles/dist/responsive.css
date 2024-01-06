@@ -27,6 +27,7 @@ body {
 }
 
 header {
+  padding: 2%;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -76,6 +77,12 @@ header contents div #DropDownMenuList p {
   margin: 2%;
   font-size: xx-large;
   cursor: pointer;
+}
+header contents div #DropDownMenuList p a {
+  color: black;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
 }
 header contents img {
   background-color: white;
