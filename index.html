@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="HeaderSection">
       <contents>
         <p class="logo"><b>Helio C.</b></p>
         <div>
@@ -23,13 +23,13 @@
           </button>
           <button id="DropDownMenuList">
             <p>
-              <b><a href="/">Home</a></b>
+              <b><a href="#HeroTop">Home</a></b>
             </p>
             <p>
-              <b><a href="/">About</a></b>
+              <b><a href="#AboutMeStart">About</a></b>
             </p>
             <p>
-              <b><a href="/">Projects</a></b>
+              <b><a href="#ProjectsTop">Projects</a></b>
             </p>
             <p>
               <b><a href="/">Contact</a></b>
@@ -40,7 +40,7 @@
     </header>
 
     <pageContent>
-      <hero>
+      <hero id="HeroTop">
         <heroContent>
           <div class="intro">
             <div>
@@ -66,18 +66,18 @@
           </div>
         </heroContent>
         <arrows>
-          <div>
+          <a href="#AboutMeStart" id="arrowsButton">
             <img src="./dir/assets/arrow-down-sign-to-navigate.png" alt="" />
             <img src="./dir/assets/arrow-down-sign-to-navigate.png" alt="" />
-          </div>
+          </a>
         </arrows>
       </hero>
-      <br />
-      <AboutMe>
-        <left>
+      <br id="AboutMeStart" />
+      <AboutMe id="AboutMeSection">
+        <left id="LeftAboutMe">
           <p class="first">ABOUT ME</p>
-          <h2>Helio de Carvalho Coimbra</h2>
-          <p>
+          <h2 id="fullName">Helio de Carvalho Coimbra</h2>
+          <p id="aboutmecopy">
             I am a junior front-end developer aspiring to go fullstack in the
             near future! Learning has always been a hobby and with that came an
             enormous amount of real world experiences not only in development,
@@ -85,10 +85,10 @@
             management & designing.
           </p>
           <br />
-          <p class="ps">(ps. I am by no means an artist)</p>
+          <p id="btw" class="ps">(ps. I am by no means an artist)</p>
         </left>
         <right>
-          <img src="./dir/assets/test.png" alt="" />
+          <img id="MyPicture" src="./dir/assets/test.png" alt="" />
           <p>That's me ^</p>
         </right>
       </AboutMe>
@@ -125,8 +125,8 @@
         </ul>
       </skills>
 
-      <Projects>
-        <h2>PROJECTS</h2>
+      <Projects id="ProjectsSection">
+        <h2 id="ProjectsTop">PROJECTS</h2>
         <projectCard>
           <left>
             <imgHolder>

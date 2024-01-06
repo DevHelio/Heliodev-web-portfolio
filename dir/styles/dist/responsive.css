@@ -142,11 +142,13 @@ hero heroContent .more img {
 hero arrows {
   animation: bounce 1s ease-in-out infinite;
 }
-hero arrows div {
+hero arrows a {
+  border: none;
+  background: none;
   display: flex;
   flex-direction: column;
 }
-hero arrows div img {
+hero arrows a img {
   margin-top: -10px;
 }
 
@@ -202,12 +204,21 @@ skills ul {
   justify-content: center;
 }
 skills ul li {
-  margin: 2% 2% 2% 2%;
+  margin: 1.5% 1.5% 1.5% 1.5%;
   list-style-type: none;
+  width: 3.5em;
+  height: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 skills ul li img {
   width: 3em;
   height: 3em;
+}
+skills ul li img:active {
+  width: 3.5em;
+  height: 3.5em;
 }
 
 @media only screen and (min-width: 768px) {

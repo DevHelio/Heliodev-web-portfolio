@@ -163,7 +163,9 @@ hero {
 
   arrows {
     animation: bounce 1s ease-in-out infinite;
-    div {
+    a {
+      border: none;
+      background: none;
       display: flex;
       flex-direction: column;
       img {
@@ -229,12 +231,23 @@ skills {
     justify-content: center;
 
     li {
-      margin: 2% 2% 2% 2%;
+      margin: 1.5% 1.5% 1.5% 1.5%;
       list-style-type: none;
+      width: 3.5em;
+      height: 3.5em;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       img {
         width: 3em;
         height: 3em;
+
+        &:active {
+          width: 3.5em;
+          height: 3.5em;
+        }
       }
     }
   }

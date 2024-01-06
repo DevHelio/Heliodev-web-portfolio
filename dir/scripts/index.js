@@ -21,6 +21,8 @@ document.getElementById("DropDownMenuList").addEventListener("click", () => {
 
 ////////////////////////////////////////
 
+////////////////////////////////////////
+// looping code should go to the end of the end of this file
 const delay = (ms) => {
   return new Promise((resolve) => {
     setTimeout(resolve, ms);
@@ -29,6 +31,8 @@ const delay = (ms) => {
 
 const changeSmile = async (ms) => {
   while (true) {
+    document.getElementById("MyName").innerHTML = `Hélio <b>;)</b>`;
+    await delay(850);
     document.getElementById("MyName").innerHTML = `Hélio <b>:)</b>`;
     await delay(ms);
     document.getElementById("MyName").innerHTML = `Hélio <b>:(</b>`;
