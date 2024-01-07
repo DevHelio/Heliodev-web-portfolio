@@ -258,7 +258,34 @@ Projects projectCard right rightContent h3 {
 Projects projectCard right rightContent technologies {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   list-style: none;
+}
+Projects projectCard right rightContent technologies li {
+  margin: 2% 2% 2% 2%;
+}
+Projects projectCard right rightContent p {
+  text-align: center;
+  padding: 2%;
+}
+Projects projectCard right rightContent buttons {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+Projects projectCard right rightContent buttons button {
+  margin: 0 5% 0 5%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2% 4% 2% 4%;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+}
+Projects projectCard right rightContent buttons button:active {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }
 
 @media only screen and (min-width: 768px) {
