@@ -14,6 +14,17 @@ document
     }
   });
 
+//Smooth scrolling on local anchors :)
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
 //tapping on white part (div) "DropDownMenuList" to make the menu dissapear
 document.getElementById("DropDownMenuList").addEventListener("click", () => {
   document.getElementById("DropDownMenuList").style.display = "none";

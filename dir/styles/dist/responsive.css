@@ -288,8 +288,7 @@ Projects projectCard right rightContent buttons button:active {
   border: 1px solid black;
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: rgba(151, 62, 62, 0.2);
-  }
+/* @media only screen and (min-width: 768px) {
+
 }
+ */
