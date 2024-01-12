@@ -364,7 +364,7 @@ Contact {
   align-items: center;
 
   #contactIntro {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   #contactIntro {
@@ -433,6 +433,8 @@ Contact {
           text-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
           margin-top: 10%;
           margin-bottom: 10%;
+
+          color: black;
         }
       }
     }

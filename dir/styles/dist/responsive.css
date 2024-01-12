@@ -313,7 +313,7 @@ Contact {
   align-items: center;
 }
 Contact #contactIntro {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 Contact #contactIntro {
   margin-bottom: 7.5%;
@@ -372,6 +372,7 @@ Contact ContactContent right #ContactForm button {
   text-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
   margin-top: 10%;
   margin-bottom: 10%;
+  color: black;
 }
 Contact #emailAdress {
   font-size: 1.25em;
