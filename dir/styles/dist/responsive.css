@@ -250,6 +250,7 @@ Projects projectCard left imgHolder img {
   Projects projectCard left imgHolder img {
     float: left;
     padding-top: 56.25%;
+    background-color: black;
   }
 }
 Projects projectCard right rightContent {
