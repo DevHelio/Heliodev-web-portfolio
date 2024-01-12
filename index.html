@@ -32,7 +32,7 @@
               <b><a href="#ProjectsTop">Projects</a></b>
             </p>
             <p>
-              <b><a href="/">Contact</a></b>
+              <b><a href="#contactIntro">Contact</a></b>
             </p>
           </button>
         </div>
@@ -135,7 +135,7 @@
       </skills>
 
       <Projects id="ProjectsSection">
-        <h2 id="ProjectsTop"></h2>
+        <h2 id="ProjectsTop">Projects</h2>
         <projectCard>
           <left>
             <imgHolder>
@@ -311,44 +311,62 @@
       </Projects>
 
       <Contact>
-        <left>
-          <h6>CONTACT</h6>
-          <h2>Enough scrolling, let's work together!</h2>
-          <p>
-            If you have an inquiry or any sort of development opportunities,
-            feels free to leave a message. I will be glad to converse further.
-          </p>
-          <p>
-            <span><img src="" alt="" />Heliodev@outlook.com</span>
-          </p>
-        </left>
-        <right>
-          <form action="">
-            <div>
-              <p>Name</p>
-              <input type="text" name="" id="" />
-            </div>
-            <div>
-              <p>Email</p>
-              <input type="email" name="" id="" />
-            </div>
-            <div>
-              <p>Message</p>
-              <input type="text" name="" id="" />
-            </div>
-            <button type="submit">Send</button>
-          </form>
-        </right>
+        <h2 class="mobileOnly" id="contactIntro">
+          Enough scrolling, <br />
+          let's work together!
+        </h2>
+        <ContactContent>
+          <left class="pcOnly">
+            <h6 id="contactText">CONTACT</h6>
+            <h2 class="pcOnly" id="contactIntro">
+              Enough scrolling, let's work together!
+            </h2>
+            <p class="pcOnly" id="contactDescription">
+              I am open for any inquiry or development development opportunity,
+              please feel free to leave a message
+            </p>
+            <p>
+              <span class="pcOnly"
+                ><img src="" alt="" />Heliodev@outlook.com</span
+              >
+            </p>
+          </left>
+          <right>
+            <form action="" id="ContactForm">
+              <div id="one">
+                <p>Name</p>
+                <input type="text" name="" id="" placeholder="Name" />
+              </div>
+
+              <div>
+                <p>Email</p>
+                <input type="email" name="" id="" placeholder="Email" />
+              </div>
+
+              <div>
+                <p>Message</p>
+                <textarea
+                  id="messageBox"
+                  class="msgBox"
+                  name=""
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button type="submit">Send</button>
+            </form>
+          </right>
+        </ContactContent>
+        <span><a id="emailAdress" href="">Heliodev@outlook.com</a></span>
       </Contact>
 
       <footer>
         <left>
-          <p><b>Copyright @ twentytwentythree. All rights reserved</b></p>
+          <p>Copyright @ twentytwentythree. Made by Helio/dev</p>
         </left>
-        <right>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <right class="pcOnly">
+          <img src="./dir/assets/github.png" alt="" />
+          <img src="./dir/assets/linkedin.png" alt="" />
+          <img src="./dir/assets/resume.png" alt="" />
         </right>
       </footer>
     </pageContent>

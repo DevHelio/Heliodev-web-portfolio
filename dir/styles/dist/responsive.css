@@ -288,7 +288,121 @@ Projects projectCard right rightContent buttons button:active {
   border: 1px solid black;
 }
 
-/* @media only screen and (min-width: 768px) {
-
+#contactText {
+  display: none;
 }
- */
+
+.mobileOnly {
+  display: normal;
+}
+
+.pcOnly {
+  display: none;
+}
+
+#contactIntro {
+  width: 70%;
+  text-align: center;
+}
+
+Contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+Contact #contactIntro {
+  font-size: 2em;
+}
+Contact #contactIntro {
+  margin-bottom: 7.5%;
+}
+Contact ContactContent {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+Contact ContactContent right {
+  width: 100%;
+  height: 100%;
+}
+Contact ContactContent right #ContactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+Contact ContactContent right #ContactForm div {
+  display: flex;
+  flex-direction: column;
+}
+Contact ContactContent right #ContactForm div p {
+  font-size: 1.25em;
+  font-weight: 900;
+}
+Contact ContactContent right #ContactForm div #messageBox {
+  width: 100%;
+  height: 25svw;
+  font-size: 1.25em;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 0.5em;
+}
+Contact ContactContent right #ContactForm div input {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid black;
+  font-size: 1.25em;
+  padding: 2%;
+  margin-bottom: 2%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+Contact ContactContent right #ContactForm button {
+  width: 100%;
+  height: 15svw;
+  font-size: 2.2em;
+  font-weight: 100;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+Contact #emailAdress {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-decoration: underline;
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4%;
+  background-color: black;
+  color: white;
+}
+footer left {
+  padding: 2%;
+  width: 100%;
+}
+footer left p {
+  text-align: center;
+  font-size: 0.9em;
+}
+footer img {
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+@media only screen and (min-width: 768px) {
+  #contactText {
+    display: normal;
+  }
+}
