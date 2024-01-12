@@ -246,6 +246,12 @@ Projects projectCard left imgHolder img {
   aspect-ratio: 16/9;
   border-radius: 20px;
 }
+@supports not (aspect-ratio: 16/9) {
+  Projects projectCard left imgHolder img {
+    float: left;
+    padding-top: 56.25%;
+  }
+}
 Projects projectCard right rightContent {
   display: flex;
   flex-direction: column;
