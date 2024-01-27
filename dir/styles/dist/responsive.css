@@ -405,8 +405,12 @@ footer img {
   -webkit-filter: invert(1);
 }
 
+#mobileViewOnlyMessage {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
-  #contactText {
-    display: normal;
+  body {
+    display: none;
   }
 }

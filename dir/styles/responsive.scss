@@ -478,10 +478,13 @@ footer {
   }
 }
 
+#mobileViewOnlyMessage {
+  display: none;
+}
 // Desktop media query
 
 @media only screen and (min-width: 768px) {
-  #contactText {
-    display: normal;
+  body {
+    display: none;
   }
 }
