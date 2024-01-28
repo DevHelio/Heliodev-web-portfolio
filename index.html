@@ -313,15 +313,24 @@
             </p>
           </left>
           <right>
-            <form action="" id="ContactForm">
+            <form
+              action="mailto:heliodev@outlook.com"
+              method="GET"
+              id="ContactForm"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="213b02ad-c8de-480c-9e75-9cfb3dc39950"
+              />
               <div id="one">
                 <p>Name</p>
-                <input type="text" name="" id="" placeholder="Name" />
+                <input type="text" name="subject" id="" placeholder="Name" />
               </div>
 
               <div>
                 <p>Email</p>
-                <input type="email" name="" id="" placeholder="Email" />
+                <input type="email" name="body" id="" placeholder="Email" />
               </div>
 
               <div>
@@ -329,11 +338,11 @@
                 <textarea
                   id="messageBox"
                   class="msgBox"
-                  name=""
+                  name="body"
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button type="submit"><p>Send</p></button>
+              <button type="submit" id="submitButton"><p>Send</p></button>
             </form>
           </right>
         </ContactContent>
@@ -354,18 +363,4 @@
 
     <script src="./dir/scripts/index.js"></script>
   </body>
-  <script>
-    const pageContent = document.body.innerHTML;
-
-    window.addEventListener("resize", function (event) {
-      if (document.body.clientWidth > 768) {
-        document.body.innerHTML =
-          "<h2>This page is temporary mobile only.</h2>";
-        document.body.style.display = "normal";
-      } else if (document.body.clientWidth <= 768) {
-        document.body.innerHTML = pageContent;
-        document.body.style.display = "flex";
-      }
-    });
-  </script>
 </html>

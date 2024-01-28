@@ -162,6 +162,7 @@ hero {
   }
 
   arrows {
+    scroll-behavior: smooth;
     animation: bounce 1s ease-in-out infinite;
     a {
       border: none;
@@ -437,7 +438,13 @@ Contact {
           color: black;
           p {
             font-size: 2.2em;
-            color: #fff;
+            color: black;
+          }
+        }
+        button:active {
+          background-color: black;
+          &p {
+            color: white;
           }
         }
       }
@@ -482,9 +489,7 @@ footer {
   display: none;
 }
 // Desktop media query
-
+/* 
 @media only screen and (min-width: 768px) {
-  body {
-    display: none;
-  }
 }
+ */

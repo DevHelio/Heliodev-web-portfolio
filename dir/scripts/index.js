@@ -1,3 +1,23 @@
+const pageContent = document.body.innerHTML;
+
+if (document.body.clientWidth > 768) {
+  document.body.innerHTML = "<h2>This page is temporary mobile only.</h2>";
+  document.body.style.display = "normal";
+} else if (document.body.clientWidth <= 768) {
+  document.body.innerHTML = pageContent;
+  document.body.style.display = "flex";
+}
+
+window.addEventListener("resize", function (event) {
+  if (document.body.clientWidth > 768) {
+    document.body.innerHTML = "<h2>This page is temporary mobile only.</h2>";
+    document.body.style.display = "normal";
+  } else if (document.body.clientWidth <= 768) {
+    document.body.innerHTML = pageContent;
+    document.body.style.display = "flex";
+  }
+});
+
 //Making the dropdown menu in mobile mode functional
 document
   .getElementById("DropDownButton")
